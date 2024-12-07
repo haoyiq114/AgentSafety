@@ -5,10 +5,10 @@ A curated collection of research papers, articles, and resources focused on the 
 ## Table of Content
 - Papers
     - [1. Web Agents](#1-web-agents)
-    - [2. Tool Agents / RAG](#2-tool-agents)
+    - [2. Tool Agents / RAG Systems](#2-tool-agents--rag-systems)
     - [3. Communicative Agents](#3-communicative-agents)
     - [4. OS Agents](#4-os-agents)
-    - [5. Benchmark / Survey / Position](#5-benchmark-survey-position)
+    - [5. Benchmark / Survey / Position Papers](#5-benchmark--survey--position-papers)
 - Contributing
     - [1. Add Papers](#1-add-papers)
     - [2. Format Example](#2-format-example)
@@ -41,9 +41,20 @@ A curated collection of research papers, articles, and resources focused on the 
     - 📖 TLDR: In this paper, they show that multimodal agents raise new safety risks, even though attacking agents is more challenging than prior attacks due to limited access to and knowledge about the environment. Their attacks use adversarial text strings to guide gradient-based perturbation over one trigger image in the environment: (1) the captioner attack attacks white-box captioners if they are used to process images into captions as additional inputs to the VLM; (2) the CLIP attack attacks a set of CLIP models jointly, which can transfer to proprietary VLMs.
     - 📅 Date: Jul 18, 2024
 
+- [Refusal-Trained LLMs Are Easily Jailbroken As Browser Agents](https://arxiv.org/abs/2410.13886)
+    - 🔑 Key: attack
+    - 🤖 Agent Type: Web Agent
+    - 📖 TLDR: This work introduces Browser Agent Red teaming Toolkit (BrowserART), a comprehensive test suite designed specifically for red-teaming browser agents. BrowserART is consist of 100 diverse browser-related harmful behaviors (including original behaviors and ones sourced from HarmBench [Mazeika et al., 2024] and AirBench 2024 [Zeng et al., 2024b]) across both synthetic and real websites. Our empirical study on state-of-the-art browser agents reveals that, while the backbone LLM refuses harmful instructions as a chatbot, the corresponding agent does not.
+    - 📅 Date: Oct 21, 2024
+
+- [Dissecting Adversarial Robustness of Multimodal LM Agents](https://openreview.net/forum?id=LjVIGva5Ct)
+    - 🔑 Key: attack
+    - 🤖 Agent Type: Web Agent
+    - 📖 TLDR: This work conducts the adversarial evaluation the safety of multimodal LM agents. They manually create 200 targeted adversarial tasks and evaluation scripts in a realistic threat model on top of VisualWebArena. To examine the robustness of agents, they propose the Agent Robustness Evaluation (ARE) framework. ARE views the agent as a graph showing the flow of intermediate outputs between components and decomposes robustness as the flow of adversarial information on the graph. They find that they can successfully break various latest agents that use black-box frontier LLMs, including those that perform reflection and tree search. 
+    - 📅 Date: Oct 30, 2024
 
 
-### 2. Tool Agents / RAG
+### 2. Tool Agents / RAG Systems
 
 - [TrustAgent: Towards Safe and Trustworthy LLM-based Agents](https://arxiv.org/abs/2402.01586)
     - 🔑 Key: defense
@@ -162,7 +173,7 @@ Malfunction Amplification](https://arxiv.org/pdf/2407.20859)
     - 📅 Date: Nov 04, 2024
 
 
-### 5. Benchmark / Survey / Position
+### 5. Benchmark / Survey / Position Papers
 
 - [A Trembling House of Cards? Mapping Adversarial Attacks against Language Agents](https://arxiv.org/abs/2402.10196)
     - 🔑 Key: position
@@ -199,6 +210,12 @@ Malfunction Amplification](https://arxiv.org/pdf/2407.20859)
     - 🤖 Agent Type: Tool Agent, Communicative Agent
     - 📖 TLDR: This work introduces a framework for creating safe open-world tests of LMAs. They review the security challenges posed by in-the-wild testing of LMAs, and use the conclusions to motivate the rest of the work. They introduce a dataset of 57 unsafe or off-task agent outputs, and outline the design of an early-stage LLM-based test monitor which can be easily adapted to different contexts.
     - 📅 Date: Dec 03, 2023
+
+- [AI Agents Under Threat: A Survey of Key Security Challenges and Future Pathways](https://arxiv.org/abs/2406.02630)
+    - 🔑 Key: survey
+    - 🤖 Agent Type: General LLM Agent
+    - 📖 TLDR: This survey delves into the emerging security threats faced by AI agents, categorizing them into four critical knowledge gaps: unpredictability of multi-step user inputs, complexity in internal executions, variability of operational environments, and interactions with untrusted external entities. By systematically reviewing these threats, this paper highlights both the progress made and the existing limitations in safeguarding AI agents.
+    - 📅 Date: Sep 06, 2024
 
     
 
