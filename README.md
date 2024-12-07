@@ -20,7 +20,7 @@ A curated collection of research papers, articles, and resources focused on the 
 - [EIA: Environmental Injection Attack on Generalist Web Agents for Privacy Leakage](https://arxiv.org/abs/2409.11295)
     - 🔑 Key: attack
     - 🤖 Agent Type: Web Agent
-    - 📖 TLDR: This work conducts the first study on the privacy risks of generalist web agents in adversarial environments. It considers two adversarial targets: stealing users' specific PII or the entire user request. It proposes a novel attack method, termed Environmental Injection Attack (EIA). EIA injects malicious content designed to adapt well to environments where the agents operate and our work instantiates EIA specifically for privacy scenarios in web environments.
+    - 📖 TLDR: This work conducts the first study on the privacy risks of generalist web agents in adversarial environments. It considers two adversarial targets: stealing users' specific PII or the entire user request. It proposes a novel attack method, termed Environmental Injection Attack (EIA). EIA injects malicious content designed to adapt well to environments where the agents operate and this work instantiates EIA specifically for privacy scenarios in web environments.
     - 📅 Date: Oct 04, 2024
 
 - [AdvWeb: Controllable Black-box Attacks on VLM-powered Web Agents](https://arxiv.org/abs/2410.17401)
