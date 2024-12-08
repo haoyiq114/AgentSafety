@@ -78,7 +78,7 @@ A curated collection of research papers, articles, and resources focused on the 
 
 - [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173)
     - 🔑 Key: attack
-    - 🤖 Agent Type: Tool Agent, RAG
+    - 🤖 Agent Type: Tool Agent, RAG System
     - 📖 TLDR: This work argues that LLM-Integrated Applications blur the line between data and instructions. They reveal new attack vectors, using Indirect Prompt Injection, that enable adversaries to remotely (without a direct interface) exploit LLM-integrated applications by strategically injecting prompts into data likely to be retrieved. They derive a comprehensive taxonomy from a computer security perspective to systematically investigate impacts and vulnerabilities, including data theft, worming, information ecosystem contamination, and other novel security risks. 
     - 📅 Date: May 05, 2023
 
@@ -109,7 +109,7 @@ Malfunction Amplification](https://arxiv.org/pdf/2407.20859)
 
 - [Unleashing Worms and Extracting Data: Escalating the Outcome of Attacks against RAG-based Inference in Scale and Severity Using Jailbreaking](https://arxiv.org/pdf/2409.08045)
     - 🔑 Key: attack
-    - 🤖 Agent Type: Tool Agent, RAG
+    - 🤖 Agent Type: Tool Agent, RAG System
     - 📖 TLDR: This paper demonstrates how jailbreaking a GenAI model enables attackers to escalate the severity and scale of attacks on RAG-based GenAI-powered applications. It shows that attackers can escalate RAG membership inference and entity extraction attacks into full RAG document extraction, retrieving up to 99.8% of database content. Additionally, attackers can amplify RAG data poisoning attacks to compromise the entire GenAI ecosystem by crafting adversarial self-replicating prompts that propagate as worms, forcing affected applications to perform malicious activities. The paper evaluates the performance factors influencing these attacks and discusses guardrails to protect against RAG-based inference attacks, highlighting trade-offs.
     - 📅 Date: Sep 06, 2024
 
@@ -121,25 +121,25 @@ Malfunction Amplification](https://arxiv.org/pdf/2407.20859)
 
 - [Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data](https://arxiv.org/pdf/2406.14773)
     - 🔑 Key: defense
-    - 🤖 Agent Type: Tool Agent, RAG
+    - 🤖 Agent Type: Tool Agent, RAG System
     - 📖 TLDR: This paper addresses privacy risks in retrieval-augmented generation (RAG) systems that use private data for retrieval by proposing SAGE, a two-stage synthetic data generation paradigm. SAGE preserves key contextual information in stage-1 using attribute-based extraction and generation, and enhances privacy in stage-2 through agent-based iterative refinement. Experiments show that SAGE achieves comparable performance to original data while significantly reducing privacy risks. This work pioneers the development of high-utility, privacy-preserving synthetic data for safer RAG applications across various domains.
     - 📅 Date: Jun 13, 2024
 
 - [PLeak: Prompt Leaking Attacks against Large Language Model Applications](https://arxiv.org/abs/2405.06823)
     - 🔑 Key: attack
-    - 🤖 Agent Type: Tool Agent, RAG
+    - 🤖 Agent Type: Tool Agent, RAG System
     - 📖 TLDR: This paper designs a novel, closed-box prompt leaking attack framework, called PLeak, to optimize an adversarial query such that when the attacker sends it to a target LLM application, its response reveals its own system prompt. They formulate finding such an adversarial query as an optimization problem and solve it with a gradient-based method approximately. The key idea is to break down the optimization goal by optimizing adversary queries for system prompts incrementally, i.e., starting from the first few tokens of each system prompt step by step until the entire length of the system prompt.
     - 📅 Date: May 10, 2024
 
 - [Optimization-based Prompt Injection Attack to LLM-as-a-Judge](https://arxiv.org/pdf/2403.17710)
     - 🔑 Key: attack, defense
-    - 🤖 Agent Type: Tool Agent, RAG
+    - 🤖 Agent Type: Tool Agent, RAG System
     - 📖 TLDR: This work propose JudgeDeceiver, an optimization-based prompt injection attack to LLM-as-a-Judge. JudgeDeceiver injects a carefully crafted sequence into an attacker-controlled candidate response such that LLM-as-a-Judge selects the candidate response for an attacker-chosen question no matter what other candidate responses are. The extensive evaluation shows that JudgeDeceive is highly effective, and is much more effective than existing prompt injection attacks that manually craft the injected sequences and jailbreak attacks when extended to our problem. They also show the effectiveness of JudgeDeceiver in three case studies, i.e., LLM-powered search, RLAIF, and tool selection. Moreover, they consider defenses including known-answer detection, perplexity detection, and perplexity windowed detection. The results show these defenses are insufficient.
     - 📅 Date: Nov 15, 2024
 
 - [Poisoning Retrieval Corpora by Injecting Adversarial Passages](https://arxiv.org/abs/2310.19156)
     - 🔑 Key: attack
-    - 🤖 Agent Type: RAG
+    - 🤖 Agent Type: RAG System
     - 📖 TLDR: This work proposes an attack for dense retrieval systems in which a malicious user generates a small number of adversarial passages by perturbing discrete tokens to maximize similarity with a provided set of training queries. When these adversarial passages are inserted into a large retrieval corpus, they show that this attack is highly effective in fooling these systems to retrieve them for queries that were not seen by the attacker.
     - 📅 Date: Oct 29, 2023
 
@@ -162,6 +162,18 @@ Malfunction Amplification](https://arxiv.org/pdf/2407.20859)
     - 🤖 Agent Type: Communicative Agent
     - 📖 TLDR: This work proposes a comprehensive framework grounded in agent psychology. The framework focuses on three aspects: identifying how dark personality traits in agents might lead to risky behaviors, designing defense strategies to mitigate these risks, and evaluating the safety of multi-agent systems from both psychological and behavioral perspectives. The experiments reveal several intriguing phenomena, such as the collective dangerous behaviors among agents, agents' propensity for self-reflection when engaging in dangerous behavior, and the correlation between agents' psychological assessments and their dangerous behaviors. 
     - 📅 Date: Jan 22, 2024
+
+- [On the Resilience of Multi-Agent Systems with Malicious Agents](https://arxiv.org/abs/2408.00989)
+    - 🔑 Key: attack, defense
+    - 🤖 Agent Type: Communicative Agent
+    - 📖 TLDR: This paper investigates the resilience of three multi-agent collaboration systems—linear, flat, and hierarchical—against malicious agents that produce erroneous or misleading outputs. Six systems are selected and evaluated on four downstream tasks, including code generation, math problem solving, translation, and text evaluation. They design two methods, AUTOTRANSFORM and AUTOINJECT, to transform any agent into a malicious one while preserving its functional integrity. Additionally, they show the promise of improving multi-agent system resilience by demonstrating that two defense methods, introducing a mechanism for each agent to challenge others' outputs, or an additional agent to review and correct messages.
+    - 📅 Date: Sep 30, 2024
+
+- [MultiAgent Collaboration Attack: Investigating Adversarial Attacks in Large Language Model Collaborations via Debate](https://arxiv.org/abs/2406.14711)
+    - 🔑 Key: attack, defense
+    - 🤖 Agent Type: Communicative Agent
+    - 📖 TLDR: This work studies the vulnerabilities of language model collaborations via debate. They evaluate the behavior of a network of models collaborating through debate under the influence of an adversary. They introduce pertinent metrics to assess the adversary's effectiveness, focusing on system accuracy and model agreement. Additionally, they explore inference-time methods to generate more compelling arguments and evaluate the potential of prompt-based mitigation as a defensive strategy.
+    - 📅 Date: Jun 26, 2024
 
 
 ### 4. OS Agents
@@ -217,6 +229,17 @@ Malfunction Amplification](https://arxiv.org/pdf/2407.20859)
     - 📖 TLDR: This survey delves into the emerging security threats faced by AI agents, categorizing them into four critical knowledge gaps: unpredictability of multi-step user inputs, complexity in internal executions, variability of operational environments, and interactions with untrusted external entities. By systematically reviewing these threats, this paper highlights both the progress made and the existing limitations in safeguarding AI agents.
     - 📅 Date: Sep 06, 2024
 
+- [Navigating the Risks: A Survey of Security, Privacy, and Ethics Threats in LLM-Based Agents](https://arxiv.org/pdf/2411.09523)
+    - 🔑 Key: survey
+    - 🤖 Agent Type: General LLM Agent
+    - 📖 TLDR: This survey focuses on the various threats faced by LLM-based agents. They propose a new taxonomy of these threats and summarize their technical advancements and limitations based on this framework and taxonomy. Subsequently, they select four real-world agents (WebGPT, Voyager, PReP, ChatDev) as case studies to analyze the types of threats these agents may encounter in practical use and their underlying causes. 
+    - 📅 Date: Nov 14, 2024
+
+- [Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents](https://arxiv.org/abs/2410.02644)
+    - 🔑 Key: benchmark
+    - 🤖 Agent Type: Tool Agent, RAG System
+    - 📖 TLDR: This work introduces Agent Security Bench (ASB), a comprehensive framework designed to formalize, benchmark, and evaluate the attacks and defenses of LLM-based agents, including 10 scenarios (e.g., e-commerce, autonomous driving, finance), 10 agents targeting the scenarios, over 400 tools, 23 different types of attack/defense methods, and 8 evaluation metrics. Based on ASB, we benchmark 10 prompt injection attacks, a memory poisoning attack, a novel Plan-of-Thought backdoor attack, a mixed attack, and 10 corresponding defenses across 13 LLM backbones with nearly 90,000 testing cases in total.
+    - 📅 Date: Oct 03, 2024
     
 
 ## Contributing
