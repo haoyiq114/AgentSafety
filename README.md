@@ -1,6 +1,6 @@
 # LLM-Agent-Safety-Paper-List
 
-A curated collection of research papers, articles, and resources focused on the safety, trustworthiness, and robustness of autonomous agents driven by LLMs/LMMs. This repository aims to serve as a reference for researchers, practitioners, and enthusiasts working in the field of Agent Safety.
+A curated collection of research papers, articles, and resources focused on the safety, trustworthiness, and robustness of autonomous agents driven by LLMs/LMMs. It covers key topics such as attacks, defenses, and evaluations of agents, spanning various types, including Web Agents, Tool Agents, Communicative Agents, RAG Systems, OS Agents, and more. This repository aims to serve as a reference for researchers, practitioners, and enthusiasts working in the field of Agent Safety.
 
 ## Table of Content
 - Papers
