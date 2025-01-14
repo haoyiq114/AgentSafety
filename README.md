@@ -183,6 +183,12 @@ Malfunction Amplification](https://arxiv.org/pdf/2407.20859)
     - 🤖 Agent Type: OS Agent
     - 📖 TLDR: This work demonstrates that VLM agents can be easily attacked by a set of carefully designed adversarial pop-ups, which human users would typically recognize and ignore. This distraction leads agents to click these pop-ups instead of performing the tasks as usual. Integrating these pop-ups into existing agent testing environments like OSWorld and VisualWebArena leads to an attack success rate (the frequency of the agent clicking the pop-ups) of 86% on average and decreases the task success rate by 47%. 
     - 📅 Date: Nov 04, 2024
+ 
+- [Caution for the Environment: Multimodal Agents are Susceptible to Environmental Distractions](https://arxiv.org/pdf/2408.02544)
+    - 🔑 Key: attack
+    - 🤖 Agent Type: OS Agent / GUI Agent
+    - 📖 TLDR: This paper investigates the faithfulness of multimodal large language model (MLLM) agents in the graphical user interface (GUI) environment, aiming to address the research question of whether multimodal GUI agents can be distracted by environmental context. Experimental results reveal that even the most powerful models, whether generalist agents or specialist GUI agents, are susceptible to distractions. Furthermore, we explore the adversarial perspective and implement environment injection, demonstrating that such unfaithfulness can be exploited, leading to unexpected risks.
+    - 📅 Date: Aug 05, 2024
 
 
 ### 5. Benchmark / Survey / Position Papers
